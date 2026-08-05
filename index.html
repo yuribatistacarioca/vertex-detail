@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vertex Detail — Estética Automotiva Móvel | São Sebastião e Caraguatatuba</title>
+  <meta name="description" content="Detalhamento técnico automotivo no litoral norte de SP. Lavagem técnica, polimento, cristalização e vitrificação com atendimento móvel. Agende pelo WhatsApp.">
+  <meta property="og:title" content="Vertex Detail — Engenharia de preservação para o seu carro">
+  <meta property="og:description" content="Estética automotiva móvel em São Sebastião e Caraguatatuba. Avaliação técnica antes de cada serviço.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/logo.jpg">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M4 8 L16 26 L28 8 L22 8 L16 17.5 L10 8 Z' fill='%23C7924E'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Condensed:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=10">
+  <script defer src="https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoDetailing",
+    "name": "Vertex Detail",
+    "description": "Estética automotiva móvel com detalhamento técnico no litoral norte de São Paulo.",
+    "areaServed": ["São Sebastião", "Caraguatatuba"],
+    "telephone": "+55-12-99208-8268",
+    "sameAs": ["https://instagram.com/vertex.detail_"],
+    "priceRange": "R$100 - R$800+"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Onde o serviço é feito?", "acceptedAnswer": { "@type": "Answer", "text": "Você escolhe: atendimento em domicílio, conforme a região, ou no Estúdio Vertex, em São Sebastião, espaço próprio preparado para o detalhamento." } },
+      { "@type": "Question", "name": "O orçamento é pago?", "acceptedAnswer": { "@type": "Answer", "text": "Não. A avaliação técnica e o orçamento são sem compromisso." } },
+      { "@type": "Question", "name": "Quanto tempo dura a proteção da vitrificação?", "acceptedAnswer": { "@type": "Answer", "text": "De 1 a 3 anos, conforme o uso e a conservação do veículo, com resistência à maresia, ao sol e à chuva ácida." } }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <div class="scroll-progress" aria-hidden="true"><i></i></div>
+
+  <!-- ============================== PRELOADER ============================== -->
+  <div id="preloader" aria-hidden="true">
+    <div class="pre-logo">
+      <svg class="pre-mark" viewBox="0 0 100 100" fill="none">
+        <path class="pre-tri" d="M50 27 L85 85 H15 Z" stroke="var(--verniz)" stroke-width="5" stroke-linejoin="round"/>
+        <path class="pre-star" d="M50 2 L55 16.5 L69 21.5 L55 26.5 L50 41 L45 26.5 L31 21.5 L45 16.5 Z" fill="#EDEAE2"/>
+      </svg>
+      <span class="pre-word">VERTEX<span>DETAIL</span></span>
+      <span class="pre-bar"><i></i></span>
+    </div>
+  </div>
+
+  <!-- ============================== NAV ============================== -->
+  <header class="nav" id="nav">
+    <div class="container">
+      <a href="#" class="logo" aria-label="Vertex Detail, início">
+        <svg viewBox="0 0 100 100" fill="none" aria-hidden="true">
+          <path d="M50 27 L85 85 H15 Z" stroke="var(--verniz)" stroke-width="6"/>
+          <path d="M50 2 L55 16.5 L69 21.5 L55 26.5 L50 41 L45 26.5 L31 21.5 L45 16.5 Z" fill="#EDEAE2" stroke="var(--grafite)" stroke-width="4"/>
+        </svg>
+        <span class="logo-text">VERTEX<span>DETAIL</span></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Navegação principal">
+        <a href="#resultados">Resultados</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#protecao">Proteção</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a class="btn btn-primary" href="https://wa.me/5512992088268?text=Ol%C3%A1%2C%20vi%20o%20site%20da%20Vertex%20Detail%20e%20quero%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          Agendar pelo WhatsApp
+        </a>
+      </nav>
+
+      <div class="nav-mobile-actions">
+        <a class="btn btn-primary nav-cta-mobile" href="https://wa.me/5512992088268?text=Ol%C3%A1%2C%20vi%20o%20site%20da%20Vertex%20Detail%20e%20quero%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener" aria-label="Agendar pelo WhatsApp">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          Agendar
+        </a>
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============================== HERO ============================== -->
+    <section class="hero">
+      <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="assets/videos/hero.jpg" src="assets/videos/hero.mp4" aria-hidden="true" tabindex="-1"></video>
+      <div class="container">
+        <div class="hero-copy">
+          <p class="eyebrow">Estética automotiva móvel · Litoral Norte SP</p>
+          <h1>Isso não é lavagem.<br>É <em>engenharia de preservação</em>.</h1>
+          <p class="lead">Detalhamento técnico em São Sebastião e Caraguatatuba. Você escolhe o local, a Vertex cuida do resto.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://wa.me/5512992088268?text=Ol%C3%A1%2C%20vi%20o%20site%20da%20Vertex%20Detail%20e%20quero%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+              Agendar pelo WhatsApp
+            </a>
+            <a class="btn btn-ghost" href="#servicos">Ver serviços e preços</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================== THREATS ============================== -->
+    <section class="section">
+      <div class="container">
+        <div class="h2-block reveal">
+          <h2>O lava-rápido comum é um risco que você não vê.</h2>
+          <p class="lead">Cada lavagem errada tira um pouco do valor do seu carro. O estrago é lento, silencioso e caro de reverter.</p>
+        </div>
+        <div class="threats-grid">
+          <article class="threat-card reveal">
+            <svg class="threat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 2v6.5L3.6 19.4a1.5 1.5 0 0 0 1.3 2.6h14.2a1.5 1.5 0 0 0 1.3-2.6L14 8.5V2"/><path d="M8.5 2h7"/><path d="M7 16h10"/></svg>
+            <h3>Produtos ácidos</h3>
+            <p>Soluções agressivas que corroem o verniz, mancham plásticos e apagam o brilho original da pintura.</p>
+          </article>
+          <article class="threat-card reveal">
+            <svg class="threat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg>
+            <h3>Panos sujos que riscam</h3>
+            <p>Areia e grão presos no pano criam micro-riscos em espiral. É por isso que pintura "lavada" perde o espelhamento.</p>
+          </article>
+          <article class="threat-card reveal">
+            <svg class="threat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+            <h3>Maresia e sol do litoral</h3>
+            <p>Sal, umidade e UV o ano inteiro. No litoral norte, pintura sem proteção envelhece duas vezes mais rápido.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== MODELO VERTEX ============================== -->
+    <section class="section panel">
+      <div class="container">
+        <div class="h2-block reveal">
+          <h2>O Modelo Vertex</h2>
+          <p class="lead">Cuidado minucioso, produto certo e avaliação antes de qualquer serviço. O contrário do amadorismo.</p>
+        </div>
+        <div class="protocol">
+          <div class="protocol-item reveal">
+            <svg class="protocol-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.801 10A10 10 0 1 1 17 3.335"/><path d="m9 11 3 3L22 4"/></svg>
+            <div>
+              <h3>Avaliação técnica antes de cada serviço</h3>
+              <p>Cada carro chega em um estado diferente. O serviço só começa depois de entender o que a sua pintura precisa.</p>
+            </div>
+          </div>
+          <div class="protocol-item reveal">
+            <svg class="protocol-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.801 10A10 10 0 1 1 17 3.335"/><path d="m9 11 3 3L22 4"/></svg>
+            <div>
+              <h3>Produtos técnicos de alta performance</h3>
+              <p>Nada de produto genérico ou ácido. Linha profissional, com pH controlado e segura para verniz, plásticos e couro.</p>
+            </div>
+          </div>
+          <div class="protocol-item reveal">
+            <svg class="protocol-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.801 10A10 10 0 1 1 17 3.335"/><path d="m9 11 3 3L22 4"/></svg>
+            <div>
+              <h3>Sem pressa</h3>
+              <p>Detalhamento não combina com fila. Cada agendamento tem o tempo que o serviço bem feito exige.</p>
+            </div>
+          </div>
+          <div class="protocol-item reveal">
+            <svg class="protocol-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.801 10A10 10 0 1 1 17 3.335"/><path d="m9 11 3 3L22 4"/></svg>
+            <div>
+              <h3>Você escolhe o local</h3>
+              <p>Atendimento em domicílio, conforme a região, ou no Estúdio Vertex, em São Sebastião: espaço próprio, preparado para o detalhamento.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="founder reveal">
+          <img src="assets/fotos/fundador.jpg" alt="Fundador da Vertex Detail" width="720" height="1018" loading="lazy">
+          <div class="founder-copy">
+            <h3>Quem cuida do seu carro</h3>
+            <p>"Detalhamento é obsessão pelo detalhe. Cada carro que passa pela Vertex recebe o mesmo padrão: avaliação honesta, produto certo e o tempo que o serviço bem feito exige."</p>
+            <span>Yuri · Fundador da Vertex Detail</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== COMO FUNCIONA ============================== -->
+    <section class="section">
+      <div class="container">
+        <div class="h2-block reveal">
+          <h2>Como funciona o atendimento móvel.</h2>
+          <p class="lead">Sem loja, sem fila e sem enrolação. Do primeiro contato ao carro pronto, em três passos.</p>
+        </div>
+        <div class="steps">
+          <div class="step reveal">
+            <span class="step-num">01</span>
+            <h3>Chame no WhatsApp</h3>
+            <p>Conte qual é o carro, o estado dele e o serviço que você procura. Se não souber qual serviço precisa, sem problema: a avaliação resolve isso.</p>
+          </div>
+          <div class="step reveal">
+            <span class="step-num">02</span>
+            <h3>Avaliação e orçamento</h3>
+            <p>A Vertex avalia o que a pintura e o interior precisam e fecha com você o valor, a data e o local. Tudo combinado antes, sem surpresa.</p>
+          </div>
+          <div class="step reveal">
+            <span class="step-num">03</span>
+            <h3>Atendimento onde você escolher</h3>
+            <p>Em domicílio, conforme a região, ou no Estúdio Vertex, em São Sebastião. Nos dois casos, o mesmo padrão técnico e o carro entregue pronto.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== RESULTADOS (VÍDEOS) ============================== -->
+    <section class="section" id="resultados">
+      <div class="container">
+        <div class="h2-block reveal">
+          <h2>Veja a qualidade do serviço.</h2>
+          <p class="lead">Continue rolando — os vídeos passam de um a um.</p>
+        </div>
+      </div>
+
+      <div class="pan-section">
+        <div class="pan-track">
+          <div class="pan-panel">
+          <span class="pan-index">01 / 03</span>
+          <figure class="video-card">
+            <video src="assets/videos/resultado-1.mp4" poster="assets/videos/resultado-1.jpg" preload="metadata" playsinline></video>
+            <button class="video-play" aria-label="Assistir vídeo: antes e depois da lavagem técnica">
+              <span class="play-circle"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.14v13.72a1 1 0 0 0 1.5.86l11-6.86a1 1 0 0 0 0-1.72l-11-6.86a1 1 0 0 0-1.5.86Z"/></svg></span>
+            </button>
+            <figcaption>Antes e depois · Lavagem Técnica</figcaption>
+            <div class="video-empty">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5"/><rect x="2" y="6" width="14" height="12" rx="2"/></svg>
+              <span>Vídeo em breve</span>
+            </div>
+          </figure>
+          </div>
+          <div class="pan-panel">
+          <span class="pan-index">02 / 03</span>
+          <figure class="video-card">
+            <video src="assets/videos/resultado-2.mp4" poster="assets/videos/resultado-2.jpg" preload="metadata" playsinline></video>
+            <button class="video-play" aria-label="Assistir vídeo: brilho do acabamento no estúdio">
+              <span class="play-circle"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.14v13.72a1 1 0 0 0 1.5.86l11-6.86a1 1 0 0 0 0-1.72l-11-6.86a1 1 0 0 0-1.5.86Z"/></svg></span>
+            </button>
+            <figcaption>Acabamento de estúdio</figcaption>
+            <div class="video-empty">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5"/><rect x="2" y="6" width="14" height="12" rx="2"/></svg>
+              <span>Vídeo em breve</span>
+            </div>
+          </figure>
+          </div>
+          <div class="pan-panel">
+          <span class="pan-index">03 / 03</span>
+          <figure class="video-card">
+            <video src="assets/videos/resultado-3.mp4" poster="assets/videos/resultado-3.jpg" preload="metadata" playsinline></video>
+            <button class="video-play" aria-label="Assistir vídeo: pintura protegida com espelhamento">
+              <span class="play-circle"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.14v13.72a1 1 0 0 0 1.5.86l11-6.86a1 1 0 0 0 0-1.72l-11-6.86a1 1 0 0 0-1.5.86Z"/></svg></span>
+            </button>
+            <figcaption>Proteção e espelhamento</figcaption>
+            <div class="video-empty">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5"/><rect x="2" y="6" width="14" height="12" rx="2"/></svg>
+              <span>Vídeo em breve</span>
+            </div>
+          </figure>
+          </div>
+        </div>
+        <div class="pan-progress" aria-hidden="true"><i></i></div>
+      </div>
+    </section>
+
+    <!-- ============================== SERVIÇOS ============================== -->
+    <section class="section panel" id="servicos">
+      <div class="container">
+        <div class="h2-block reveal">
+          <p class="eyebrow">Serviços e preços</p>
+          <h2>Manutenção completa, por dentro e por fora.</h2>
+          <p class="lead">Preço transparente, sem surpresa no orçamento. Valores a partir de, conforme porte e estado do veículo.</p>
+        </div>
+
+        <div class="service-base reveal">
+          <div class="service-base-head">
+            <h3>Lavagem Técnica</h3>
+            <p class="price"><small>a partir de</small>R$ 150</p>
+          </div>
+          <div class="service-col">
+            <h4>Externa</h4>
+            <ul>
+              <li>Pré-lavagem e lavagem completa</li>
+              <li>Remoção de chuva ácida dos vidros</li>
+              <li>Cera com repelência à água</li>
+              <li>Pretinho nos pneus</li>
+            </ul>
+          </div>
+          <div class="service-col">
+            <h4>Interna</h4>
+            <ul>
+              <li>Lavagem de carpete e aspiração completa</li>
+              <li>Lavagem a seco de tecidos</li>
+              <li>Painel, multimídia e volante</li>
+              <li>Revitalizador de plásticos e borrachas</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="addons-head reveal">
+          <h3>Adicionais</h3>
+          <p>Serviços opcionais para contratar junto com a Lavagem Técnica. O valor do adicional soma ao preço da lavagem.</p>
+        </div>
+
+        <div class="addons-grid">
+          <div class="addon-card reveal">
+            <div class="addon-info">
+              <h4>Higienização de Motor</h4>
+              <p>Limpeza segura do compartimento do motor, com proteção do verniz.</p>
+            </div>
+            <p class="addon-price">+ R$ 80</p>
+          </div>
+          <div class="addon-card reveal">
+            <div class="addon-info">
+              <h4>Higienização Profunda Interna</h4>
+              <p>Remoção de manchas e ácaros. Estofados, couro e cintos higienizados.</p>
+            </div>
+            <p class="addon-price">+ R$ 50</p>
+          </div>
+          <div class="addon-card reveal">
+            <div class="addon-info">
+              <h4>Descontaminação de Pintura</h4>
+              <p>Remove a aspereza que a lavagem não tira. Devolve o toque liso e o brilho da lataria.</p>
+            </div>
+            <p class="addon-price">+ R$ 150</p>
+          </div>
+          <div class="addon-card reveal">
+            <div class="addon-info">
+              <h4>Descontaminação Interna com Ozônio</h4>
+              <p>Elimina 99% de vírus, bactérias, fungos e mofo. Acaba com cheiro de cigarro, pets e umidade. Purifica o ar-condicionado.</p>
+            </div>
+            <p class="addon-price">+ R$ 100</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== PROTEÇÃO ============================== -->
+    <section class="section" id="protecao">
+      <div class="container">
+        <div class="h2-block reveal">
+          <p class="eyebrow">Tratamentos de proteção</p>
+          <h2>Três níveis de blindagem para a pintura.</h2>
+          <p class="lead">Todo tratamento já inclui lavagem técnica e descontaminação de pintura. Você paga pela proteção, não por etapas soltas.</p>
+        </div>
+
+        <div class="tiers">
+          <article class="tier-card reveal">
+            <div class="tier-stack" aria-hidden="true"><i class="is-on"></i><i></i><i></i></div>
+            <h3>Polimento Técnico</h3>
+            <p class="tier-desc">Correção de riscos e imperfeições com refino de alto padrão.</p>
+            <p class="tier-price"><small>a partir de</small>R$ 500</p>
+            <ul class="tier-includes">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Lavagem técnica completa</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Descontaminação de pintura</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Correção de riscos e swirls</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Refino para brilho uniforme</li>
+            </ul>
+            <a class="btn btn-outline" href="https://wa.me/5512992088268?text=Ol%C3%A1%2C%20vi%20o%20site%20da%20Vertex%20Detail%20e%20quero%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
+          </article>
+
+          <article class="tier-card reveal">
+            <div class="tier-stack" aria-hidden="true"><i class="is-on"></i><i class="is-on"></i><i></i></div>
+            <h3>Cristalização</h3>
+            <p class="tier-desc">Polimento técnico mais camada de proteção com brilho intenso e prolongado.</p>
+            <p class="tier-price"><small>a partir de</small>R$ 650</p>
+            <ul class="tier-includes">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Tudo do Polimento Técnico</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Camada de proteção cristalizada</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Brilho intenso e prolongado</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Repelência reforçada à água</li>
+            </ul>
+            <a class="btn btn-outline" href="https://wa.me/5512992088268?text=Ol%C3%A1%2C%20vi%20o%20site%20da%20Vertex%20Detail%20e%20quero%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
+          </article>
+
+          <article class="tier-card is-featured reveal">
+            <div class="tier-stack" aria-hidden="true"><i class="is-on"></i><i class="is-on"></i><i class="is-on"></i></div>
+            <span class="tier-badge">Proteção máxima · 1 a 3 anos</span>
+            <h3>Vitrificação</h3>
+            <p class="tier-desc">Escudo de alta resistência química e térmica sobre o verniz, com efeito espelhado.</p>
+            <p class="tier-price"><small>a partir de</small>R$ 800</p>
+            <ul class="tier-includes">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Tudo do Polimento Técnico</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Proteção contra UV, maresia e chuva ácida</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Resiste a seiva de árvore e fezes de pássaro</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Efeito espelhado de longa duração</li>
+            </ul>
+            <a class="btn btn-primary" href="https://wa.me/5512992088268?text=Ol%C3%A1%2C%20vi%20o%20site%20da%20Vertex%20Detail%20e%20quero%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== DEPOIMENTOS ============================== -->
+    <section class="section panel section--tight" id="depoimentos">
+      <div class="container">
+        <div class="h2-block reveal">
+          <h2>Quem já confiou o carro à Vertex.</h2>
+        </div>
+      </div>
+
+      <!-- SUBSTITUIR: depoimentos de exemplo. Trocar pelos depoimentos reais dos seus clientes. -->
+      <div class="testi-band" id="testiBand">
+        <div class="testi-track">
+          <figure class="testi-card">
+            <div class="testi-stars" aria-label="5 de 5 estrelas"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.26 6.6.57-5 4.4 1.5 6.47L12 16.3 5.99 19.7l1.5-6.47-5-4.4 6.6-.57z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.26 6.6.57-5 4.4 1.5 6.47L12 16.3 5.99 19.7l1.5-6.47-5-4.4 6.6-.57z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.26 6.6.57-5 4.4 1.5 6.47L12 16.3 5.99 19.7l1.5-6.47-5-4.4 6.6-.57z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.26 6.6.57-5 4.4 1.5 6.47L12 16.3 5.99 19.7l1.5-6.47-5-4.4 6.6-.57z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.26 6.6.57-5 4.4 1.5 6.47L12 16.3 5.99 19.7l1.5-6.47-5-4.4 6.6-.57z"/></svg></div>
+            <blockquote>"Meu carro voltou com cara de zero. O cuidado com cada detalhe impressiona."</blockquote>
+            <figcaption>Ricardo · Honda Civic · São Sebastião</figcaption>
+          </figure>
+          <figure class="testi-card">
+            <div class="testi-stars" aria-label="5 de 5 estrelas"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.26 6.6.57-5 4.4 1.5 6.47L12 16.3 5.99 19.7l1.5-6.47-5-4.4 6.6-.57z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.26 6.6.57-5 4.4 1.5 6.47L12 16.3 5.99 19.7l1.5-6.47-5-4.4 6.6-.57z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.26 6.6.57-5 4.4 1.5 6.47L12 16.3 5.99 19.7l1.5-6.47-5-4.4 6.6-.57z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.26 6.6.57-5 4.4 1.5 6.47L12 16.3 5.99 19.7l1.5-6.47-5-4.4 6.6-.57z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.26 6.6.57-5 4.4 1.5 6.47L12 16.3 5.99 19.7l1.5-6.47-5-4.4 6.6-.57z"/></svg></div>
+            <blockquote>"Fez a vitrificação na minha casa. Pontual, profissional e o resultado é outro nível."</blockquote>
+            <figcaption>Fernanda · Jeep Compass · Caraguatatuba</figcaption>
+          </figure>
+          <figure class="testi-card">
+            <div class="testi-stars" aria-label="5 de 5 estrelas"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.26 6.6.57-5 4.4 1.5 6.47L12 16.3 5.99 19.7l1.5-6.47-5-4.4 6.6-.57z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.26 6.6.57-5 4.4 1.5 6.47L12 16.3 5.99 19.7l1.5-6.47-5-4.4 6.6-.57z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.26 6.6.57-5 4.4 1.5 6.47L12 16.3 5.99 19.7l1.5-6.47-5-4.4 6.6-.57z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.26 6.6.57-5 4.4 1.5 6.47L12 16.3 5.99 19.7l1.5-6.47-5-4.4 6.6-.57z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.26 6.6.57-5 4.4 1.5 6.47L12 16.3 5.99 19.7l1.5-6.47-5-4.4 6.6-.57z"/></svg></div>
+            <blockquote>"O cheiro de mofo sumiu de verdade com o ozônio. Recomendo de olhos fechados."</blockquote>
+            <figcaption>Marcos · Fiat Toro · Caraguatatuba</figcaption>
+          </figure>
+          <figure class="testi-card">
+            <div class="testi-stars" aria-label="5 de 5 estrelas"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.26 6.6.57-5 4.4 1.5 6.47L12 16.3 5.99 19.7l1.5-6.47-5-4.4 6.6-.57z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.26 6.6.57-5 4.4 1.5 6.47L12 16.3 5.99 19.7l1.5-6.47-5-4.4 6.6-.57z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.26 6.6.57-5 4.4 1.5 6.47L12 16.3 5.99 19.7l1.5-6.47-5-4.4 6.6-.57z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.26 6.6.57-5 4.4 1.5 6.47L12 16.3 5.99 19.7l1.5-6.47-5-4.4 6.6-.57z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.26 6.6.57-5 4.4 1.5 6.47L12 16.3 5.99 19.7l1.5-6.47-5-4.4 6.6-.57z"/></svg></div>
+            <blockquote>"Preço justo e serviço muito acima de qualquer lava-rápido da região."</blockquote>
+            <figcaption>Juliana · VW T-Cross · São Sebastião</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== ÁREA ============================== -->
+    <section class="section" id="area">
+      <div class="container coverage-grid">
+        <div class="reveal">
+          <h2>Atendimento móvel no litoral norte.</h2>
+          <ul class="coverage-list">
+            <li>São Sebastião <span>domicílio ou Estúdio Vertex</span></li>
+            <li>Caraguatatuba <span>por agendamento</span></li>
+          </ul>
+          <p class="coverage-note">Você escolhe: a Vertex vai até você, conforme a região, ou você deixa o carro no Estúdio Vertex, em São Sebastião. A logística é confirmada no agendamento pelo WhatsApp.</p>
+        </div>
+        <div class="map-plate reveal" role="img" aria-label="Mapa estilizado do litoral norte de São Paulo com os dois pontos de atendimento: Caraguatatuba e São Sebastião.">
+          <svg viewBox="0 0 400 400" fill="none" aria-hidden="true">
+            <path d="M-20 90 C 60 100, 110 130, 150 180 C 185 224, 200 265, 210 330 L 210 420 L -20 420 Z" fill="#191c21" stroke="#2e333c" stroke-width="1"/>
+            <path d="M250 240 C 285 215, 330 220, 355 250 C 380 280, 375 330, 340 355 C 305 380, 260 370, 245 335 C 230 300, 225 258, 250 240 Z" fill="#191c21" stroke="#2e333c" stroke-width="1"/>
+            <g font-family="IBM Plex Mono, monospace" font-size="11" fill="#9CA0AA" letter-spacing="1">
+              <circle cx="120" cy="130" r="4" fill="#C7924E"/>
+              <circle cx="120" cy="130" r="9" fill="none" stroke="#C7924E" stroke-opacity="0.35"><animate attributeName="r" values="6;13" dur="2.4s" repeatCount="indefinite"/><animate attributeName="stroke-opacity" values="0.4;0" dur="2.4s" repeatCount="indefinite"/></circle>
+              <text x="138" y="134">CARAGUATATUBA</text>
+              <circle cx="172" cy="240" r="5" fill="#E4B980"/>
+              <circle cx="172" cy="240" r="10" fill="none" stroke="#E4B980" stroke-opacity="0.4"><animate attributeName="r" values="7;15" dur="2.4s" begin="0.8s" repeatCount="indefinite"/><animate attributeName="stroke-opacity" values="0.5;0" dur="2.4s" begin="0.8s" repeatCount="indefinite"/></circle>
+              <text x="60" y="272" fill="#EDEAE2">SÃO SEBASTIÃO</text>
+              <text x="60" y="288" font-size="9">ESTÚDIO VERTEX</text>
+            </g>
+            <path d="M172 240 L 120 130" stroke="#C7924E" stroke-opacity="0.3" stroke-width="1" stroke-dasharray="4 5"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== FAQ ============================== -->
+    <section class="section" id="duvidas">
+      <div class="container">
+        <div class="h2-block reveal">
+          <h2>Dúvidas frequentes.</h2>
+        </div>
+        <div class="faq reveal">
+          <details class="faq-item">
+            <summary>Onde o serviço é feito?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary>
+            <p>Você escolhe entre duas opções: a Vertex atende em domicílio, conforme a região, ou você deixa o carro no Estúdio Vertex, em São Sebastião, um espaço próprio e preparado para o detalhamento. Tudo é combinado no agendamento.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Quanto tempo demora o serviço?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary>
+            <p>Depende do serviço e do estado do carro. Detalhamento não combina com pressa: o tempo estimado é informado na avaliação, antes de fechar. Você sabe o prazo antes de confirmar.</p>
+          </details>
+          <details class="faq-item">
+            <summary>O orçamento é pago?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary>
+            <p>Não. A avaliação técnica e o orçamento são sem compromisso. Você só decide depois de saber exatamente o que o carro precisa e quanto custa.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Por que os preços são "a partir de"?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary>
+            <p>Porque cada carro é diferente: porte do veículo e estado da pintura mudam o trabalho. O valor exato é fechado na avaliação, antes do serviço começar, sem surpresa no final.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Quanto tempo dura a proteção da vitrificação?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary>
+            <p>De 1 a 3 anos, conforme o uso e a conservação do veículo. É a proteção mais duradoura do catálogo, com resistência à maresia, ao sol e à chuva ácida, ideal para o litoral.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Vale a pena proteger a pintura aqui no litoral?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary>
+            <p>É onde mais vale. Maresia, sal e sol forte o ano inteiro aceleram o desgaste da pintura. A proteção preserva o brilho e o valor de revenda do carro.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Como funciona o pagamento?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary>
+            <p>As condições de pagamento são combinadas no agendamento, direto pelo WhatsApp, junto com a data e o local do atendimento.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== ORÇAMENTO / FORM ============================== -->
+    <section class="section panel" id="agendar">
+      <div class="container">
+        <div class="form-wrap">
+          <div class="h2-block reveal" style="text-align: center;">
+            <h2>Peça seu orçamento.</h2>
+            <p class="lead" style="margin-inline: auto;">Preencha os dados e a conversa já chega pronta no WhatsApp da Vertex. Resposta com avaliação técnica, sem compromisso.</p>
+          </div>
+
+          <form class="form-grid reveal" id="formOrcamento" novalidate>
+            <div class="field">
+              <label for="fNome">Seu nome</label>
+              <input type="text" id="fNome" name="nome" required autocomplete="name" placeholder="Ex: João Silva">
+            </div>
+            <div class="field">
+              <label for="fCarro">Carro (modelo e ano)</label>
+              <input type="text" id="fCarro" name="carro" required placeholder="Ex: Corolla 2022">
+            </div>
+            <div class="field">
+              <label for="fServico">Serviço desejado</label>
+              <select id="fServico" name="servico" required>
+                <option value="" disabled selected>Escolha um serviço</option>
+                <option>Lavagem Técnica</option>
+                <option>Lavagem Técnica + adicionais</option>
+                <option>Polimento Técnico</option>
+                <option>Cristalização de Pintura</option>
+                <option>Vitrificação de Pintura</option>
+                <option>Higienização de Motor</option>
+                <option>Higienização Profunda Interna</option>
+                <option>Descontaminação de Pintura</option>
+                <option>Descontaminação Interna (Ozônio)</option>
+                <option>Não sei ainda, quero uma avaliação técnica</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="fCidade">Sua cidade</label>
+              <select id="fCidade" name="cidade" required>
+                <option value="" disabled selected>Escolha a cidade</option>
+                <option>São Sebastião</option>
+                <option>Caraguatatuba</option>
+                <option>Outra</option>
+              </select>
+            </div>
+            <div class="field field--full">
+              <label for="fLocal">Onde prefere o atendimento?</label>
+              <select id="fLocal" name="local" required>
+                <option value="" disabled selected>Escolha o local</option>
+                <option>Na minha casa (domicílio)</option>
+                <option>No Estúdio Vertex (São Sebastião)</option>
+                <option>Ainda não sei, quero orientação</option>
+              </select>
+            </div>
+            <div class="field field--full">
+              <label for="fObs">Observações <span>(opcional)</span></label>
+              <textarea id="fObs" name="obs" rows="3" placeholder="Ex: carro com cheiro de mofo, riscos na porta, preferência de horário..."></textarea>
+            </div>
+            <p class="form-error field--full" id="formError" hidden>Preencha nome, carro, serviço e cidade antes de enviar.</p>
+            <button type="submit" class="btn btn-primary field--full">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+              Agendar pelo WhatsApp
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================== FOOTER ============================== -->
+  <footer class="footer">
+    <div class="container">
+      <a href="#" class="logo" aria-label="Vertex Detail, voltar ao topo">
+        <svg viewBox="0 0 100 100" fill="none" aria-hidden="true">
+          <path d="M50 27 L85 85 H15 Z" stroke="var(--verniz)" stroke-width="6"/>
+          <path d="M50 2 L55 16.5 L69 21.5 L55 26.5 L50 41 L45 26.5 L31 21.5 L45 16.5 Z" fill="#EDEAE2" stroke="var(--grafite)" stroke-width="4"/>
+        </svg>
+        <span class="logo-text">VERTEX<span>DETAIL</span></span>
+      </a>
+      <nav class="footer-links" aria-label="Links do rodapé">
+        <a href="https://instagram.com/vertex.detail_" target="_blank" rel="noopener">@vertex.detail_</a>
+        <a href="tel:+5512992088268">(12) 99208-8268</a>
+        <a href="#servicos">Serviços</a>
+      </nav>
+      <p class="footer-meta">Vertex Detail · São Sebastião, SP</p>
+    </div>
+  </footer>
+
+  <script src="script.js?v=10" defer></script>
+</body>
+</html>
